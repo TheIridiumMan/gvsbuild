@@ -78,7 +78,7 @@ jobs:
       - name: Run test suite
         run: tox run --skip-pkg-install
 
-    build:
+  build:
     needs: lint
     name: Build GTK${{ matrix.gtk-version }} Binaries
     runs-on: windows-2019
